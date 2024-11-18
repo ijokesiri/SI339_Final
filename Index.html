@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Website</title>
+    <link rel="stylesheet" href="css/reset.css"> <!-- Reset CSS -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Custom Styles -->
+</head>
+<body>
+    <!-- Header with title, subtitle, and navbar -->
+    <header>
+        <div class="header-content">
+            <!-- Left side: Title and Subtitle -->
+            <div class="title-subtitle">
+                <h1>Shania's Recipe Journal</h1>
+                <p>A taste of my life</p>
+            </div>
+
+            <!-- Right side: Navbar -->
+            <nav>
+                <ul>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Featured Recipes</h2>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for recipes..." aria-label="Search recipes">
+        </div>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <h3>Cracker Barrel Pancakes</h3>
+                <img src="images/pancakes.jpg" alt="Cracker Barrel Buttermilk Pancakes" class="recipe-image">
+                <p>These Copycat Cracker Barrel Pancakes are easier to make than most 
+                    pancake recipes you can get your hands on! Just 5 ingredients and
+                    5 minutes to have hot buttermilk pancakes from scratch on the
+                    griddle. I would also like to think they will be the best pancakes you have ever eaten!</p>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                    </div>
+                <a href="https://www.mirlandraskitchen.com/copycat-cracker-barrel-pancakes/" target="_blank" class="recipe-button">View Recipe</a>
+                <div class="recipe-time">
+                    <span class="clock-icon">⏰</span> <!-- Unicode clock emoji -->
+                    <span>15 mins</span>
+                </div>
+            </div>
+
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+        <button onclick="window.print()">Print this Page</button> <!-- Print button -->
+    </footer>
+</body>
+</html>

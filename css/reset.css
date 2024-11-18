@@ -1,0 +1,58 @@
+/* Resetting all default margin and padding */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove underline from links by default */
+a {
+    text-decoration: none;
+}
+
+/* Set default font style for body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Remove default table border spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Remove default form input styles */
+input,
+textarea,
+select,
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* Remove background color from fieldsets */
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+/* Reset default font size for heading elements */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* Remove default line height from <p> tags */
+p {
+    margin-bottom: 1em;
+}

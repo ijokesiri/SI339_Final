@@ -1,0 +1,352 @@
+/* Reset CSS (This is already linked separately, but I'll include it for completeness) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fff0db;
+}
+
+/* Header styling */
+header {
+    display: flex;               /* Flexbox layout */
+    justify-content: space-between; /* Space between the title/subtitle and navbar */
+    align-items: center;         /* Vertically center items */
+    padding: 20px;               /* Padding around the header */
+    background-color: none;   /* Header background color */
+}
+
+
+.header-content {
+    display: flex;               /* Flexbox layout for the header content */
+    justify-content: space-between; /* Space between title/subtitle and navbar */
+    width: 100%;                 /* Full width to ensure space between title and nav */
+}
+
+header h2{
+    font-size: 36px;              /* Set font size */
+    font-weight: bold;            /* Make the font bold */
+    color: #2c3e50;               /* Dark color for the text */
+    text-align: Center;             /* Align text to the left */
+    margin: 0;                    /* Remove default margin */
+    padding: 10px 0;              /* Add some padding on top and bottom */
+    font-family: 'Arial', sans-serif; /* Font family */
+    letter-spacing: 1px;
+}
+
+.title-subtitle {
+    text-align: left;            /* Align title and subtitle to the left */
+}
+
+.title-subtitle h1 {
+    margin-top: 40px;
+    margin-left: 10px;                   /* Remove margin around the title */
+    font-size: 36px;             /* Font size for the title */
+}
+
+.title-subtitle p {        
+    font-size: 18px;             /* Font size for the subtitle */
+    color: #333; 
+    margin-left: 10px;                 /* Subtitle color */
+}
+
+/* Navbar styling */
+nav {
+    text-align: right;           /* Align navbar to the right */
+}
+
+nav ul {
+    list-style: none;            /* Remove bullet points */
+    padding: 0;
+    margin-top: 30px;
+}
+
+nav ul li {
+    display: inline-block;       /* Display navbar items horizontally */
+    margin-left: 20px;           /* Add space between navbar items */
+}
+
+nav ul li a {
+    text-decoration: none;       /* Remove underline from links */
+    color: #333;                 /* Link color */
+    font-size: 18px;             /* Font size for the links */
+}
+
+nav ul li a:hover {
+    color: #ffcb05;              /* Hover effect color */
+}
+
+/* Optional: Styling for dropdown */
+nav ul li ul {
+    display: none;               /* Hide dropdowns by default */
+    position: absolute;          /* Position dropdowns */
+    background-color: #fff;      /* Background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    margin-top: 0;
+    z-index: 1000;   
+}
+
+nav ul li:hover ul {
+    display: block;              /* Show dropdown when hovering over parent */
+}
+
+nav ul li ul li {
+    display: block;              /* Display dropdown items vertically */
+    padding: 10px 20px;          /* Padding for dropdown items */
+}
+
+nav ul li ul li a {
+    color: #333;                 /* Link color in the dropdown */
+    font-size: 16px;             /* Font size for dropdown links */
+}
+
+nav ul li ul li a:hover {
+    color: #ffcb05;              /* Hover effect color for dropdown */
+}
+
+
+
+
+/* Style for the main title (h1) */
+h1 {
+    font-size: 36px;              /* Set font size */
+    font-weight: bold;            /* Make the font bold */
+    color: #2c3e50;               /* Dark color for the text */
+    text-align: left;             /* Align text to the left */
+    margin: 0;                    /* Remove default margin */
+    padding: 10px 0;              /* Add some padding on top and bottom */
+    font-family: 'Arial', sans-serif; /* Font family */
+    letter-spacing: 1px;          /* Slightly increase letter spacing */
+}
+
+h2{
+    font-size: 36px;              /* Set font size */
+    font-weight: bold;            /* Make the font bold */
+    color: #2c3e50;               /* Dark color for the text */
+    text-align: Center;             /* Align text to the left */
+    margin: 0;                    /* Remove default margin */
+    padding: 10px 0;              /* Add some padding on top and bottom */
+    font-family: 'Arial', sans-serif; /* Font family */
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 36px;              /* Set font size */
+    font-weight: bold;            /* Make the font bold */
+    color: #2c3e50;               /* Dark color for the text */
+    text-align: Center;             /* Align text to the left */
+    margin: 0;                    /* Remove default margin */
+    padding: 10px 0;              /* Add some padding on top and bottom */
+    font-family: 'Arial', sans-serif; /* Font family */
+    letter-spacing: 1px;
+}
+/*breakfast, lunch and dinner styling*/
+#breakfast h2 {
+    color: #333; /* Text color */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Bold font */
+    text-align: center; /* Center align text */
+    margin-top: 50px; /* Space above the heading */
+
+}
+
+/* Recipe Card Styling */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the cards */
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    
+}
+
+.recipe-card {
+    background-color: white;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners for softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Increased shadow for depth */
+    overflow: hidden; /* Makes rounded corners apply to child elements */
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 10px;
+    margin: 10px 0;
+    flex: 1 1 100%; /* Default to 1 card per row */
+    border: 3px solid #5d3616; /* Light border for separation */
+    position: relative;
+    
+}
+
+/* Styling for the time display */
+.recipe-time {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+    font-size: 1em;
+    color: #555; /* Subtle color */
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+/* Styling for the clock icon */
+.clock-icon {
+    font-size: 1.2em; /* Slightly larger to make it more visible */
+    color: #888; /* Slightly lighter for subtlety */
+}
+
+/* Styling for the star rating */
+.star-rating {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    
+}
+
+/* Default star color (empty star) */
+.star {
+    font-size: 1.7em;
+    color: yellow; /* Yellow color for stars */
+    cursor: pointer;
+}
+
+/* For cards that don't have stars, hover will turn the card light gray */
+.recipe-card:not(:has(.star-rating)):hover {
+    background-color: rgb(255, 255, 255); /* Recipe card turns light gray when hovered */
+}
+
+/* Image Styling */
+.recipe-image {
+    width: 100%; /* Full width on mobile */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Matches card border-radius */
+    margin-bottom: 10px;
+    border: 3px solid #f0f0f0; /* Light border for separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Recipe Title Styling */
+.recipe-card h3 {
+    font-size: 1.4em;
+    margin: 10px 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Recipe Description Styling */
+.recipe-card p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+    margin: 20px;
+    padding: 0 5px 0 5px; 
+}
+
+/* Hover Effect */
+.recipe-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* More shadow on hover */
+    background-color: #feffea;
+}
+
+.recipe-button {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #ff7f50; /* Button color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    text-align: center;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-button:hover {
+    background-color: #ff6347; /* Darker color on hover */
+}
+
+/* JS STUFF*/
+.sort-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.sort-buttons button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sort-buttons button:hover {
+    background-color: #555;
+}
+
+/*Search Bar styling*/ 
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#no-results {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+/* For screens 600px and wider, show 2 cards per row */
+@media (min-width: 600px) {
+    .recipe-card {
+        flex: 1 1 45%;
+    }
+    .recipe-image {
+        width: 80%; /* Full width of the card */
+        height: auto; /* Consistent height for images on desktop */
+    }
+}
+
+/* For screens 900px and wider, show 3 cards per row */
+@media (min-width: 900px) {
+    .recipe-card {
+        flex: 1 1 30%;
+    }
+    .recipe-image {
+        width: 200px; /* Full width of the card */
+        height: 200px; /* Consistent height for images on desktop */
+        border-radius: 10px; /* Matches card border-radius */
+        margin-bottom: 10px;
+        border: 3px solid #f0f0f0; /* Light border for separation */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Soft shadow */
+    }
+}
+
+
