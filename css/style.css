@@ -151,7 +151,7 @@ h3{
     letter-spacing: 1px;
 }
 /*breakfast, lunch and dinner styling*/
-#breakfast h2 {
+#breakfast h2, #lunch h2, #dinner h2, #dessert h2 {
     color: #333; /* Text color */
     font-size: 24px; /* Font size */
     font-weight: bold; /* Bold font */
@@ -159,6 +159,46 @@ h3{
     margin-top: 50px; /* Space above the heading */
 
 }
+
+/* Image Styling*/ 
+.about-me-card {
+    display: flex;
+    flex-direction: column; /* Default: vertical layout for mobile */
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin: 20px auto;
+    text-align: center; /* Centered text for smaller screens */
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+.about-me-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-me-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .about-me-card {
+        flex-direction: row; /* Horizontal layout for desktop */
+        text-align: left; /* Align text to the left */
+    }
+
+
+}
+
 
 /* Recipe Card Styling */
 .recipe-container {
@@ -194,7 +234,7 @@ h3{
     align-items: center;
     gap: 5px; /* Space between icon and text */
     font-size: 1em;
-    color: #555; /* Subtle color */
+    color: #333; /* Darker color for better contrast */
     position: absolute;
     bottom: 10px;
     left: 15px;
@@ -202,8 +242,11 @@ h3{
 
 /* Styling for the clock icon */
 .clock-icon {
-    font-size: 1.2em; /* Slightly larger to make it more visible */
-    color: #888; /* Slightly lighter for subtlety */
+    background-color: #fff; /* White background */
+    border-radius: 50%; /* Make it circular */
+    padding: 5px;
+    color: #6B4F3D;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
 /* Styling for the star rating */
@@ -218,7 +261,7 @@ h3{
 /* Default star color (empty star) */
 .star {
     font-size: 1.7em;
-    color: yellow; /* Yellow color for stars */
+    color: rgb(135, 115, 0); /* Yellow color for stars */
     cursor: pointer;
 }
 
@@ -267,7 +310,7 @@ h3{
     margin-top: 5px;
     margin-bottom: 10px;
     padding: 10px 20px;
-    background-color: #ff7f50; /* Button color */
+    background-color: #4C0001; /* Button color */
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -278,7 +321,7 @@ h3{
 }
 
 .recipe-button:hover {
-    background-color: #ff6347; /* Darker color on hover */
+    background-color: #1f0500; /* Darker color on hover */
 }
 
 /* JS STUFF*/

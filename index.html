@@ -21,17 +21,36 @@
             <nav>
                 <ul>
                     <li><a href="recipes.html">Recipes</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <h2>Featured Recipes</h2>
-        <div class="search-container">
-            <input type="text" id="search-bar" placeholder="Search for recipes..." aria-label="Search recipes">
+        <div class="about-me-card">
+            <div class="about-me-content">
+                <h2>About Me</h2>
+                <p>Hi, I'm Shania! Welcome to my website, a space I created to share my love 
+                    for cooking and my passion for technology. Here, you'll find a collection 
+                    of hand-picked recipes that are as easy to follow as they are delicious, curated 
+                    to inspire everyone from seasoned chefs to kitchen beginners.
+
+                    Cooking has always been a source of joy for me—it’s about more than just making 
+                    meals; it’s about creating connections, exploring cultures, and celebrating the 
+                    art of food. Alongside my love for cooking, I’ve developed a strong passion for web 
+                    development. I believe the internet should be a space where everyone can connect, learn, 
+                    and grow, regardless of their abilities or backgrounds. That’s why I’ve worked hard to 
+                    make this website not only visually engaging but also fully accessible to all users.
+                    
+                    This project combines my favorite things: creativity, problem-solving, and sharing with others. 
+                    Thank you for visiting, and I hope you enjoy exploring the recipes and features I’ve built. 
+                    Your feedback and suggestions are always welcome as I continue to grow and improve. Let’s make 
+                    cooking—and the web—more fun and inclusive, together!
+                </p>
+            </div>
         </div>
+        
+        <h2>Featured Recipes</h2>
         <div class="recipe-container">
             <div class="recipe-card">
                 <h3>Cracker Barrel Pancakes</h3>
@@ -49,6 +68,37 @@
                     <span>15 mins</span>
                 </div>
             </div>
+            <div class="recipe-card" data-recipe="Banana Pudding">
+                <h3>Banana Pudding</h3>
+                <img src="images/bp.jpg" alt="Banana Pudding" class="recipe-image">
+                <p>This easy, old-fashioned Banana Pudding is made from 
+                    scratch with layers of homemade vanilla pudding, Nilla 
+                    wafers, sliced bananas, and whipped cream.</p>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                    </div>
+                <a href="https://tastesbetterfromscratch.com/banana-pudding/" target="_blank" class="recipe-button">View Recipe</a>
+                <div class="recipe-time">
+                    <span class="clock-icon">⏰</span> <!-- Unicode clock emoji -->
+                    <span>4.5 hours</span>
+                </div>
+            </div>
+            <div class="recipe-card" data-recipe="Fried Beef Tacos">
+                <h3>Fried Beef Tacos (Arizona Tacos)</h3>
+                <img src="images/tacos.jpg" alt="Fried Beef Tacos" class="recipe-image">
+                <p>These crispy fried beef tacos—sometimes called "Arizona Tacos"— are having a moment on TikTok.
+                     You press the raw meat onto the tortilla before frying the whole thing for the ultimate crunchy 
+                     exterior with a tender, juicy filling. And they're easy to make—Click the link to learn how.</p>
+                    <div class="star-rating">
+                        <span class="star">★</span>
+                    </div>
+                <a href="https://www.allrecipes.com/fried-beef-tacos-recipe-7511180" target="_blank" class="recipe-button">View Recipe</a>
+                <div class="recipe-time">
+                    <span class="clock-icon">⏰</span> <!-- Unicode clock emoji -->
+                    <span>30 mins</span>
+                </div>
+            </div>
+        </div>
 
     </main>
 
